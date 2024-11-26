@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "SIR plugin",
+  "version": "1.0.0",
+  "description": "Recognizes sensitive and confidential patterns in the user inputs",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "action": {
+    "default_popup": "plugin_modal.html",
+    "default_icon": {
+      "16": "images/plugin_16.png",
+      "48": "images/plugin_48.png",
+      "128": "images/plugin_128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["styles.css"],
+      "js": ["warning_modal.js", "main.js"]
+    }
+  ],
+  "icons": {
+    "16": "images/plugin_16.png",
+    "48": "images/plugin_48.png",
+    "128": "images/plugin_128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["patterns.json", "images/*", "warning_modal.html"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

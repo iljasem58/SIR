@@ -1,0 +1,79 @@
+{
+  "patterns": [
+    {
+      "name": "Credit Card Number",
+      "regex": "\\b(?:\\d[ -]*?){13,16}\\b",
+      "message": "It looks like you have entered a credit card number."
+    },
+    {
+      "name": "Email Address",
+      "regex": "\\b[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}\\b",
+      "message": "It looks like you have entered an email address."
+    },
+    {
+      "name": "Social Security Number",
+      "regex": "\\b\\d{3}-\\d{2}-\\d{4}\\b",
+      "message": "It looks like you have entered a Social Security Number."
+    },
+    {
+      "name": "Phone Number",
+      "regex": "\\b(\\+?\\d{1,2}[ -]?)?(\\(?\\d{3}\\)?[ -]?\\d{3}[ -]?\\d{4})\\b",
+      "message": "It looks like you have entered a phone number."
+    },
+    {
+      "name": "Bank Account Number",
+      "regex": "\\b(?:\\d{4}[ -]?){2,4}\\d{4}\\b",
+      "message": "It looks like you have entered a bank account number."
+    },
+    {
+      "name": "IBAN",
+      "regex": "\\b[A-Z]{2}\\d{2}[A-Z0-9]{4}\\d{7}(?:[A-Z0-9]?){0,16}\\b",
+      "message": "It looks like you have entered an International Bank Account Number (IBAN)."
+    },
+    {
+      "name": "Passport Number",
+      "regex": "\\b[A-PR-WYa-pr-wy][1-9]\\d{7}\\b",
+      "message": "It looks like you have entered a passport number."
+    },
+    {
+      "name": "Driver's License",
+      "regex": "\\b[A-Z]{1}\\d{7}\\b",
+      "message": "It looks like you have entered a driver's license number."
+    },
+    {
+      "name": "Medical Terms",
+      "regex": "\\b(diagnosis|prescription|test result|insurance number|allergy|medical record|treatment)\\b",
+      "message": "It looks like you have entered sensitive medical information."
+    },
+    {
+      "name": "Address",
+      "regex": "\\b\\d{1,5}\\s\\w+(?:\\s\\w+)*\\s(?:street|st|road|rd|avenue|ave|boulevard|blvd|lane|ln|drive|dr|court|ct)\\b",
+      "message": "It looks like you have entered an address."
+    },
+    {
+      "name": "Authentication Information",
+      "regex": "\\b(password|passcode|API key|auth token|secret|encryption key|private key)\\b",
+      "message": "It looks like you have entered sensitive authentication information."
+    },
+    {
+      "name": "Birth Date",
+      "regex": "\\b\\d{1,2}[./-]\\d{1,2}[./-]\\d{2,4}\\b",
+      "message": "It looks like you have entered a birth date."
+    },
+    {
+      "name": "Credit Card CVV",
+      "regex": "\\b\\d{3,4}\\b(?!\\d|\\s*[./-])",
+      "message": "It looks like you have entered a credit card CVV number."
+    },
+    {
+      "name": "Tax ID Number",
+      "regex": "\\b\\d{2}-\\d{7}\\b",
+      "message": "It looks like you have entered a tax identification number (TIN)."
+    },
+    {
+      "name": "Financial Terms",
+      "regex": "\\b(routing number|account number|bank name|sort code|IFSC)\\b",
+      "message": "It looks like you have entered sensitive financial information."
+    }
+  ]
+}
